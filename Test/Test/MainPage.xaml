@@ -3,22 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Test.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout BackgroundColor="White">
+        <Image Source="logo.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="50,120,50,0"/>
+        <Entry Keyboard="Email" x:Name="mailEntry" Placeholder="Email Adres" Margin="50"/>
+        <Entry  IsPassword="True" x:Name="passwordEntry" Placeholder="Password" Margin="50,-40"/>
+        <Button x:Name="loginButton" Clicked="loginButton_Clicked" BackgroundColor="Blue" Text="Login In" Margin="50,70,50,0" CornerRadius="10"/>
+        <Button x:Name="forgotButton" Clicked="forgotButton_Clicked" BackgroundColor="Transparent" Text="Forgotten password?" Margin="50,12,50,0" TextColor="SkyBlue" FontAttributes="Bold" />
+
+        <BoxView Color="Black" HeightRequest="1" Margin="50,20,50,0"></BoxView>
+        <Button x:Name="registerButton" Clicked="registerButton_Clicked" BackgroundColor="Green" Text="Create new account" Margin="50,25,50,0" TextColor="SkyBlue" FontAttributes="Bold" />
+
+
     </StackLayout>
 
 </ContentPage>
