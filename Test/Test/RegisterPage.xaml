@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.RegisterPage">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout Background="white" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="50">
+                <Image Source="logo.png" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="0,10"/>
+                <Entry Keyboard="Email" x:Name="emailEntry" Placeholder="Email address"/>
+                <Entry Keyboard="Text" IsPassword="True" x:Name="passwordEntry" Placeholder="Password"/>
+                <Entry Keyboard="Text" x:Name="firstNameEntry" Placeholder="Imie"/>
+                <Entry Keyboard="Text" x:Name="lastNameEntry" Placeholder="Nazwisko"/>
+                <StackLayout>
+                    <Label Text="Data urodzenia"/>
+                    <DatePicker x:Name="birthDateEntry" />
+                </StackLayout>
+                <Entry Keyboard="Text" x:Name="addressEntry" Placeholder="Adres" />
+                <Picker x:Name="sexEntry" ItemDisplayBinding="{Binding .}" SelectedIndex="1"/>
+                <Entry Keyboard="Text" x:Name="jobEntry" Placeholder="Praca"/>
+                <Entry Keyboard="Text" x:Name="schoolEntry" Placeholder="Szkoła"/>
+                <Entry Keyboard="Text" x:Name="originCityEntry" Placeholder="Pochodzenie"/>
+                <Picker x:Name="martialStatusEntry" ItemDisplayBinding="{Binding .}" SelectedIndex="1"/>
+                <Button Text="Register" Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+    
+    </ContentPage.Content>
+</ContentPage>
