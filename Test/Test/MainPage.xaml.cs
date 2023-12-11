@@ -14,5 +14,20 @@ namespace Test
         {
             InitializeComponent();
         }
+
+        private void loginButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void forgotButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registerButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
